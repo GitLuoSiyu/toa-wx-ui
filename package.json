@@ -1,0 +1,49 @@
+{
+  "name": "toa-wx-ui",
+  "version": "1.0.0",
+  "description": "toa-轻量的小程序UI库",
+  "main": "dist/main.css",
+  "scripts": {
+    "sass": "node-sass",
+    "release": "npm pub --access public",
+    "new": "node ./scripts/new",
+    "build:wx": "rimraf ./dist/wx && node ./scripts/wx",
+    "build": "node-sass ./src/main.scss ./dist/main.css",
+    "build:helpers": "node-sass ./src/helpers.scss ./dist/helpers.css  --output-style compressed",
+    "dev": "npm run build -- --watch",
+    "release:demo": "npm run build:wx && node ./scripts/demo.js"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "gh-pages": "^2.1.0",
+    "ionicons": "^4.6.2",
+    "node-sass": "^4.12.0",
+    "shelljs": "^0.8.3"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "files": [
+    "dist",
+    "src",
+    "fonts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitLuoSiyu/toa-wx-ui.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "ui"
+  ],
+  "author": "LuoSiYu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitLuoSiyu/toa-wx-ui/issues"
+  },
+  "homepage": "https://github.com/GitLuoSiyu/toa-wx-ui#README",
+  "dependencies": {
+    "rimraf": "^3.0.0"
+  }
+}

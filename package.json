@@ -42,8 +42,5 @@
   "bugs": {
     "url": "https://github.com/GitLuoSiyu/toa-wx-ui/issues"
   },
-  "homepage": "https://github.com/GitLuoSiyu/toa-wx-ui#README",
-  "dependencies": {
-    "rimraf": "^3.0.0"
-  }
+  "homepage": "https://github.com/GitLuoSiyu/toa-wx-ui#README"
 }

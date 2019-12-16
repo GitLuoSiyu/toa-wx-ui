@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+// @import 'iconfont/iconfont.scss';
+@import "node_modules/ionicons/dist/scss/ionicons.scss";
+
+@import "_variables.scss";
+@import "_functions.scss";
+@import "_mixins.scss";
+@import "_reset.scss";
+
+// helpers
+@import "helpers.scss";
+
+// css变量
+@import 'cssVar.scss';
+
+
+// 组件
+@import "components/_toast.scss";

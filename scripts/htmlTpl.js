@@ -1,6 +1,5 @@
 module.exports = (fileName, title) => `<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name=App-Config content="fullscreen=yes,useHistoryState=yes,transition=yes">
@@ -11,7 +10,6 @@ module.exports = (fileName, title) => `<!DOCTYPE html>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>${fileName}(${title})</title>
     <link rel="stylesheet" href="../dist/main.css">
-
 </head>
 
 <body>
@@ -22,13 +20,10 @@ module.exports = (fileName, title) => `<!DOCTYPE html>
     </header>
     <!-- 头 -->
 
-
     <article class="p-1">
         <div class="a-${fileName}">
 
         </div>
     </article>
-
 </body>
-
 </html>`

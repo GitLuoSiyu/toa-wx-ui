@@ -11,15 +11,6 @@
 ## 介绍
 
 toa兔亚 是轻量稳定的小程序端组件库，纯CSS打造，无过多依赖、无兼容bug，即时取用
-## 预览
-
-扫描下方小程序二维码，体验组件库示例：
-
-<img src="https://img.yzcdn.cn/vant-weapp/qrcode-201808101114.jpg" width="200" height="200" style="margin-top: 10px;" >
-
-## 使用之前
-
-使用 toa兔亚 前，请确保你已经学习过微信官方的 [小程序简易教程](https://mp.weixin.qq.com/debug/wxadoc/dev/) 和 [自定义组件介绍](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
 
 ## 安装
 

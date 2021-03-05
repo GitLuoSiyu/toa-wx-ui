@@ -1,0 +1,6 @@
+<view class="searchBox {{homeSearch && 'homeSearch'}}" >
+  <input class="input" bindinput="input" bindtap="toSearchHistoty"  cursor-spacing="20" bindblur="inputBlur" bindfocus="inputFocus" value="{{value}}" bindconfirm="goSearch" confirm-type="search" disabled="{{jumpsearchHistory}}" placeholder="{{searchDefault}}"></input>
+  <view class="searchBtn">
+    <image class="icon" bindtap="goSearch" src="/assets/img/common/search.png"></image>
+  </view>
+</view>

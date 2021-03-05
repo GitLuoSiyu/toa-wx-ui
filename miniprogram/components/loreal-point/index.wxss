@@ -1,0 +1,56 @@
+.pupop-content {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /* width: 610rpx;
+  height: 520rpx; */
+  background-color: #FFF;
+}
+
+.close-popup {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70rpx;
+  height: 70rpx;
+  z-index: 999;
+}
+
+.policy-img {
+  display: flex;
+  width: 610rpx;
+}
+
+.title {
+  color: #165C7C;
+  font-size: 28rpx;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30rpx 0;
+  font-weight: 600;
+}
+
+.content {
+  font-size: 25rpx;
+  line-height: 30rpx;
+  margin: 0 auto;
+  padding: 10rpx 40rpx;
+  text-align: left;
+}
+
+.content view {
+  font-size: 25rpx;
+  line-height: 30rpx;
+}
+
+.icon-close {
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  display: flex;
+  width: 80rpx;
+  height: 80rpx;
+}

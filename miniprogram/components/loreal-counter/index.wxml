@@ -1,0 +1,10 @@
+<view class="loreal-class container-count">
+	<view class="symbol {{result<=min|| disabled?'disabled loreal-disabled-class':'abled loreal-symboloreal-class'}}" catchtap="{{result<=min|| disabled?'doNothing':'reduceTap'}}" data-type="overflow_min" hover-class="{{isHover?'count-hover':''}}">
+		<view class="loreal-icon loreal-icon-reduce" style="font-size:{{iconSize}};color:{{iconColor}}"></view>
+	</view>
+	<input wx:if="{{focus}}" class="loreal-count-class count" disabled="{{disabled}}" type="number" focus="{{focus}}" value="{{result}}" bindblur="onBlur" />
+	<view wx:else class="loreal-count-class count" bindtap="onCount">{{result}}</view>
+	<view class="loreal-symboloreal-class symbol {{result>=max|| disabled?'disabled loreal-disabled-class':'abled loreal-symboloreal-class'}}" catchtap="{{result>=max|| disabled?'doNothing':'addTap'}}" data-type="overflow_max" hover-class="{{isHover?'count-hover':''}}">
+		<view class="loreal-icon loreal-icon-add" style="font-size:{{iconSize}};color:{{iconColor}}"></view>
+	</view>
+</view>

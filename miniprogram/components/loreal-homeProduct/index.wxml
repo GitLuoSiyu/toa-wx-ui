@@ -1,0 +1,48 @@
+<loreal-capsule-bar navigation-bar-color="transparent" hidden-capsule="{{cateStep === 1}}" capsule-button-color="white" title-color="white" title="Loreal" bind:linlefttap="back" bind:linleftlongpress="back" disable-back="true" title="{{cateTitle}}"></loreal-capsule-bar>
+
+<!-- 页面内容 -->
+<view class="classification">
+	<view class="classBox">
+		<view class="{{productTree[navIndexArr[0]].extendInfos[0].name == '活动页' ? 'activity-right' : 'right'}}">
+			<scroll-view scroll-y class="goodsScrollView">
+				<block wx:if="{{productTree[navIndexArr[0]].extendInfos[0].name == '活动页'}}">
+					<pageSetting id="pageSetting" pageCode="{{productTree[navIndexArr[0]].extendInfos[0].code}}"></pageSetting>
+				</block>
+				<!-- 单排商品列表 -->
+				<block wx:elif="{{productTree[navIndexArr[0]].extendInfos[0].name == '商品列表'}}">
+					<view class="echo-produst-list" wx:for="{{productList}}" wx:key="index">
+						<view class="echo-product-item">
+							<view class="echo-img" data-product="{{item}}" catchtap="toListOrDetail">
+								<image src="{{item.mainImage}}" mode="widthFix" lazy-load></image>
+							</view>
+							<view class="echo-info">
+								<view class="echo-price">
+									<view> {{item.name}}</view>
+									<view>¥{{item.price}}/套</view>
+								</view>
+								<view class="echo-todetail" data-product="{{item}}" catchtap="toPay">
+									立即购买
+								</view>
+							</view>
+							<view class="echo-cart">
+								<image src="/assets/img/common/selshoppingCart.png" class="echo-cart-icon" data-product="{{item}}" catchtap="addCart" lazy-load></image>
+							</view>
+						</view>
+					</view>
+				</block>
+                
+				<!-- 类目列表 -->
+				<block wx:else>
+					<view class="goodsBox">
+						<view class="goodsItem" wx:for="{{productList}}" wx:key="index" data-product="{{item}}" bindtap="toListOrDetail">
+							<view class="imgBox">
+								<image mode="heightFix" src="{{item.mainImage}}" lazy-load></image>
+							</view>
+							<view class="detail">{{item.name}}</view>
+						</view>
+					</view>
+				</block>
+			</scroll-view>
+		</view>
+	</view>
+</view>

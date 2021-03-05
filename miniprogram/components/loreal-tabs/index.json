@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "l-icon": "../loreal-icon/index",
+        "l-badge": "../loreal-badge/index",
+        "l-tabpanel": "../loreal-tabpanel/index"
+    }
+}

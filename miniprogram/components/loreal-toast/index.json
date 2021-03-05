@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "loreal-icon": "../loreal-icon/index",
+        "loreal-mask": "../loreal-mask/index"
+    }
+}

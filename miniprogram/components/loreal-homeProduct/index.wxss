@@ -1,0 +1,266 @@
+page {
+    background-color: #FFF;
+  }
+  
+  .search {
+    width: 680rpx;
+    height: 80rpx;
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin: 36rpx auto;
+    display: flex;
+    align-items: center;
+    padding: 0 22rpx;
+    justify-content: space-between;
+  }
+  
+  .searchInput {
+    flex-grow: 1;
+  }
+  
+  .searchIcon {
+    width: 33rpx;
+    height: 33rpx;
+  }
+  
+  .classBox {
+    /* padding-top: 80rpx; */
+    padding-top: 120rpx;
+    position: fixed;
+    /* top: 0; */
+    top: 100rpx;
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+  
+  }
+  
+  .left {
+    width: 200rpx;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 20rpx;
+  
+    /* 自定义导航栏 */
+    /* margin-top: 120rpx; */
+  }
+  
+  .left .leftScroll {
+    flex: 1;
+  }
+  
+  .left .letBottom {
+    /* margin-bottom: 75rpx; */
+  
+    /*  */
+    margin-bottom: 130rpx;
+  }
+  
+  .typeBox .title {
+    height: 105rpx;
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, 1);
+    line-height: 105rpx;
+    text-align: center;
+  }
+  
+  .typeBox {
+    width: 100%;
+    position: relative;
+  }
+  
+  .left .selItem {
+    background-color: #000;
+  }
+  
+  .left .selItem .title {
+    color: #fff;
+  }
+  
+  .right {
+    position: relative;
+    width: 550rpx;
+    /* left: 22rpx; */
+    padding-left: 20rpx;
+    padding-top: 30rpx;
+    background-color: #F8F8F8;
+    padding-bottom: 100rpx;
+  }
+  
+  .right .rightTitle {
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, 1);
+    margin: 22rpx 0 54rpx 0;
+  }
+  
+  .right .remark {
+    width: 520rpx;
+    height: 230rpx;
+    /* margin-top: 20rpx; */
+  }
+  
+  .goodsScrollView {
+    height: 100%;
+  }
+  
+  .goodsBox {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    float: left;
+    padding-left: 10rpx;
+  }
+  
+  
+  .goodsItem {
+    display: inline-flex;
+    width: 240rpx;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-bottom: 20rpx;
+    margin-right: 20rpx;
+  }
+  
+  .echo-product {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .echo-product image {
+    width: 160rpx;
+    height: 160rpx;
+  }
+  
+  .echo-product .imgBox image {
+    height: 160rpx;
+  }
+  
+  .goodsItem:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+  .imgBox {
+    height: 240rpx;
+    width: 240rpx;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  
+  .goodsItem image {
+    width: 100%;
+    height: 99.6%;
+  }
+  
+  .goodsItem .detail {
+    font-size: 23rpx;
+    margin-top: 20rpx;
+    text-align: center;
+  }
+  
+  .searchBox {
+    margin: 16rpx 30rpx;
+    /* padding-left: 20rpx; */
+    background: rgba(243, 243, 243, 1);
+    position: relative;
+    z-index: 20;
+  }
+  
+  /* 热销套装 */
+  .echo-produst-list {
+    width: 495rpx;
+  }
+  
+  .echo-product-item {
+    display: flex;
+    align-items: center;
+    margin: 12rpx auto;
+    padding-top: 20rpx;
+    padding-left: 20rpx;
+  }
+  
+  .echo-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 20rpx;
+    height: 200rpx;
+    padding: 0 20rpx;
+  }
+  
+  .echo-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 10rpx;
+  }
+  
+  .echo-todetail {
+    background-color: #165b7c;
+    width: 150rpx;
+    padding: 12rpx 10rpx;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  .echo-cart-icon {
+    display: flex;
+    width: 35rpx;
+    height: 35rpx;
+    background-color: #165b7c;
+    border-radius: 50%;
+    padding: 8rpx;
+    /* margin-bottom: 4rpx; */
+  }
+  
+  .echo-img image {
+    width: 200rpx;
+  }
+  
+  .echo-product-item {
+    width: 100%;
+    height: 220rpx;
+    margin: 10rpx 0 20rpx;
+    padding-bottom: 20rpx;
+    background-color: #fff;
+    box-shadow: 0 2rpx 2rpx 10rpx #FFF;
+    position: relative;
+  }
+  
+  .echo-img {
+    width: 200rpx;
+    height: 200rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ..echo-img image {
+    display: flex;
+  }
+  
+  .echo-price {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .echo-price view {
+    font: 500 22rpx/1.8 "";
+  }
+  
+  .activity-right {
+    position: relative;
+    width: 550rpx;
+    padding-top: 20rpx;
+    /* background-color: #F8F8F8; */
+    padding-bottom: 100rpx;
+  
+  }

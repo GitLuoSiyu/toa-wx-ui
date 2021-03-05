@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "l-icon": "../loreal-icon/index",
+        "l-error-tip": "../loreal-error-tip/index"
+    }
+}

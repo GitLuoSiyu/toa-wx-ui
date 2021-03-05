@@ -1,0 +1,6 @@
+<loreal-popup show="{{true}}" locked="{{false}}" animation="true" content-align="center">
+	<view class='pupop-content'>
+		<image src="" class="policy-img"></image>
+		<image src="" class="icon-close"></image>
+	</view>
+</loreal-popup>

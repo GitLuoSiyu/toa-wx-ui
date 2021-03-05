@@ -1,0 +1,1 @@
+<view class="loreal-class loreal-class-self loreal-self-class loreal-icon {{ name === '' ? '' : 'loreal-icon-' + name }}" style="{{ size ? 'font-size:'+size+'rpx;':''}}{{ color ? 'color:' + color+';' : '' }}" />

@@ -1,0 +1,9 @@
+{
+  
+  "component": true,
+  "usingComponents": {
+    "goodsOne":"/components/goods/goodsOne/goodsOne",
+    "search-input":"/components/searchInput/searchInput",
+    "share-btn": "/components/shareBtn/shareBtn"
+  }
+}

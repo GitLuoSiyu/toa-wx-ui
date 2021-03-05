@@ -1,0 +1,112 @@
+
+@import "../../public.wxss";
+
+.line2Box {
+  display: flex;
+  justify-content: space-between;
+  padding:0 30rpx;
+}
+
+.line2Box .lineImg {
+  /* width: 335rpx; */
+  width: 330rpx;
+  height: auto;
+}
+
+.swiper {
+  height: 750rpx;
+  width: 750rpx;
+}
+
+.swiperImg {
+  width: 750rpx;
+  height: 100%;
+}
+
+.dotsBox {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 7.5px; */
+  padding-top: 7.5px;
+  padding-bottom: 17.5px;
+  background: #fff;
+}
+
+.dotsBox .dots {
+  width: 60rpx;
+  height: 10rpx;
+  background: #cbcbc9;
+  /* border-radius: 5rpx; */
+  margin-right: 17rpx;
+  flex: none;
+}
+
+.dotsBox .seldots {
+  background: rgba(129, 129, 129, 1);
+}
+
+.searchBox {
+  width: 662rpx;
+  height: 90rpx;
+  border: 1rpx solid rgba(0, 0, 0, 1);
+  margin: 32rpx auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28rpx;
+}
+
+.searchBox .searchInput {
+  flex: 1;
+  font-size: 24rpx;
+}
+
+.searchBox .searchImg {
+  height: 33rpx;
+  width: 33rpx;
+  margin-left: 50rpx;
+}
+
+.template {
+  width: 100%;
+  font-size: 0;
+}
+
+.template .templateImg {
+  width: 100%;
+  height: auto;
+}
+
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bgwhite {
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+/* 描述 */
+.description {
+  font-size: 50rpx;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  position: relative;
+  padding: 80rpx 0 105rpx 0;
+  position: relative;
+  line-height:50rpx ;
+}
+
+.description::after {
+  content: "";
+  width: 199rpx;
+  height: 15rpx;
+  background: #165b7c;
+  position: absolute;
+  bottom: 80rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}

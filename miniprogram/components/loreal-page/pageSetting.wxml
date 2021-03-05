@@ -1,0 +1,38 @@
+<view class="{{pageCode}}" wx:for="{{subPagesDto}}" wx:key="index">
+	<!-- 轮播图 bindtap="toDetail"-->
+	<block wx:if="{{item.pageType=='GroupView' && item.subPagesDto.length}}">
+		<block wx:if="{{item.subPagesDto.length==1 && item.showCount!=2}}">
+			<image class="image publicMargin" mode="widthFix" src='{{item.subPagesDto[0].image}}' data-item="{{item.subPagesDto[0]}}" bindtap="toDetail"></image>
+		</block>
+		<block wx:elif="{{item.showCount==2}}">
+			<view class="description" wx:if="{{item.description}}">{{item.description}}</view>
+			<swiper indicator-dots="{{item.showPoint}}" class="banner publicMargin" indicator-color="#DDD" indicator-active-color="#666" style="height:{{allSwiperHeight['swiperHeight_'+item.code]+(item.showPoint && item.subPagesDto.lenght>1 ?30:0) + 40}}px;" autoplay="{{item.autoplay}}" circular interval="{{3000}}">
+				<swiper-item wx:for="{{item.subPagesDto}}" wx:key="*this" wx:for-item="itemSubPagesDto">
+					<view class="line2Box">
+						<image class="lineImg" wx:key="*this" data-item="{{subPagesDtoImg}}" webp="{{true}}" wx:for="{{itemSubPagesDto}}" wx:key="*this" wx:for-item="subPagesDtoImg" mode="widthFix" src='{{subPagesDtoImg.image}}' bindload="getSwiperH" data-code="{{item.code}}" id="id{{item.code}}" bindtap="toDetail"></image>
+					</view>
+				</swiper-item>
+			</swiper>
+		</block>
+		<!-- {{item.showPoint && item.subPagesDto.lenght>1 }} -->
+		<swiper wx:else indicator-dots="{{item.showPoint}}" class="banner publicMargin" indicator-color="#DDD" indicator-active-color="#666" style="height:{{allSwiperHeight['swiperHeight_'+item.code]+(item.showPoint && item.subPagesDto.lenght>1?30:0) + 40}}px;" autoplay="{{item.autoplay}}" circular interval="{{3000}}">
+			<swiper-item wx:for="{{item.subPagesDto}}" wx:key="index" wx:for-item="itemSubPagesDto">
+				<image bindload="getSwiperH" data-code="{{item.code}}" webp="{{true}}" id="id{{item.code}}" mode="widthFix" src='{{itemSubPagesDto.image}}' class="image" data-item="{{itemSubPagesDto}}" bindtap="toDetail"></image>
+				<video wx:if="{{itemSubPagesDto.uploadFileType=='VideoFile'}}" loop="{{itemSubPagesDto.autoCarousel}}" autoplay="{{itemSubPagesDto.autoplay}}" show-center-play-btn="{{false}}" controls="{{false}}" object-fit="cover" bindloadedmetadata="getVideoH" style="height:{{allVideoHeight['videoHeight_'+itemSubPagesDto.code]}}rpx;" bindtap="toDetail" data-item="{{itemSubPagesDto}}" data-sub="{{itemSubPagesDto}}" class="w_100" src="{{itemSubPagesDto.image}}"></video>
+			</swiper-item>
+		</swiper>
+	</block>
+
+	<!-- 搜索框  -->
+	<block>
+		<view class="bgwhite publicPadding" wx:if="{{item.pageType=='SearchView'}}">
+			<search-input jumpsearchHistory="{{true}}" homeSearch="{{true}}" />
+		</view>
+	</block>
+	<!-- 简单组件 图片 -->
+	<view class="template {{item.pageType=='ProductView' && 'publicPadding'}}" wx:if="{{item.pageType=='Simple' || item.pageType=='CatetoryView' || item.pageType=='ActivityPageView' || item.pageType=='ActivityView' || item.pageType=='ProductView'}}">
+		<view class="description" wx:if="{{item.description}}">{{item.description}}</view>
+		<image wx:if="{{item.uploadFileType=='PictureFile'}}" webp="{{true}}" class="templateImg publicMargin" bindtap="toDetail" data-item="{{item}}" mode="widthFix" src="{{item.image}}"></image>
+		<video wx:if="{{item.uploadFileType=='VideoFile'}}" loop="{{item.autoCarousel}}" autoplay="{{item.autoplay}}" show-center-play-btn="{{false}}" controls="{{false}}" object-fit="cover" bindloadedmetadata="getVideoH" style="height:{{allVideoHeight['videoHeight_'+item.code]}}rpx;" bindtap="toDetail" data-item="{{item}}" data-subfather="{{item}}" data-sub="{{item}}" class="w_100" src="{{item.image}}"></video>
+	</view>
+</view>

@@ -1,0 +1,1 @@
+<button  class="loginBtn" open-type="getUserInfo" bindgetuserinfo="getuserinfo" ></button>  

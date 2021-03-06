@@ -1,0 +1,14 @@
+/* components/loginBtn/loginBtn.wxss */
+.loginBtn{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border:none;
+  background-color:transparent;
+  z-index: 99;
+}
+.loginBtn::after{
+	  border:none;
+ }

@@ -1,0 +1,21 @@
+<loreal-popup show="{{ture}}" type="confirm" show-title="{{false}}" bind:lintap="closePopup" data-item="{{collageCheckData[currentDialogIndex]}}">
+	<view data-item="{{collageCheckData[currentDialogIndex]}}" catchtap="closePopup">
+		<view class="popup-content">
+			<view class="close-box" data-item="{{collageCheckData[currentDialogIndex]}}" catchtap="closePopup">
+				<image class="close-box close-box-img" src="/assets/img/common/closeCollage.png"></image>
+			</view>
+			<view class="title">拼团成功!</view>
+			<view class="user-box">
+				<scroll-view scroll-x style="white-space:nowrap; width: 100%;text-align: center;">
+					<block wx:for="{{collageCheckData[currentDialogIndex].memberInfos}}" wx:key="index">
+						<view class="user-item">
+							<image src="{{item.avatarUrl}}" class="item user-box-img"></image>
+						</view>
+					</block>
+				</scroll-view>
+			</view>
+			<view class="go-on-collage" data-item="{{collageCheckData[currentDialogIndex]}}" bindtap="goOnCollage">继续逛逛</view>
+			<view class="check-order-detail" data-item="{{collageCheckData[currentDialogIndex]}}" bindtap="goOrderDetail">查看订单详情 ></view>
+		</view>
+	</view>
+</loreal-popup>
